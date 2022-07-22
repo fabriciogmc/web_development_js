@@ -4,5 +4,5 @@ window.onload = function(){
     console.log(body);
     var paragraph = document.createElement('p');
     body[0].appendChild(paragraph);
-    paragraph.textContent = "This was written just after document was loaded!";
+    paragraph.textContent = "Olá JS!";
 }
