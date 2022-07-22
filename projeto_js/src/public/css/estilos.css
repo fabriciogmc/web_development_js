@@ -1,0 +1,28 @@
+/* Exemplo de CSS servido estaticamente pelo Express.
+Autor: Fabrício G. M. de Carvalho
+*/
+.img-centralizada-pequena{
+    display: block;
+    margin: auto;
+    width: 25%;
+}
+
+.img-rotulo-centralizado{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.botao-centralizado-verde{
+    display: block;
+    margin: auto;
+    background-color: green;
+    color: white;
+}
+
+.div-vazia-centralizada{
+    display:block;
+    margin:auto;
+    text-align:center;
+}
