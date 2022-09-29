@@ -1,0 +1,22 @@
+{
+  "name": "Cliente web com privilégios administrativos.",
+  "version": "1.0.0",
+  "description": "Listando e inserindo projetos via serviço",
+  "main": "src/app.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "author": "Fabricio Galende Marques de Carvalho",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "formdata": "^0.10.4",
+    "request": "^2.88.2"
+  }
+}

@@ -1,0 +1,30 @@
+/* Exemplo de CSS servido estaticamente pelo Express.
+Autor: Fabrício G. M. de Carvalho
+*/
+body{
+    background-color:aquamarine;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10pt;
+    width: 150pt;
+    height: 150pt;
+    background-color: yellow;
+    border-radius: 20%;
+    text-align: center;
+    padding-top: 70pt;
+    border-color: black;
+    border-style: solid;
+}
+
+.descritor{
+    font-weight: bold;
+}
+

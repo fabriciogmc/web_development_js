@@ -1,0 +1,17 @@
+<%# A linha abaixo carrega no template o conteúdo total do arquivo header.ejs%>
+<%-include('base_header') -%>
+    <ul>
+    <% for(var i=0; i< lista_projetos.length; ++i) { %>        
+        <li> 
+            <span class="descritor">Tipo de Projeto:</span> <%=lista_projetos[i].tipo %><br/>
+            <% if(lista_projetos[i].tipo =="software") { %>
+            <span class="descritor">Tecnologia:</span> <%=lista_projetos[i].tecnologia %><br/>
+            <% } %>
+            <span class="descritor">Início:</span> <%=lista_projetos[i].inicio %> <br/>
+            <span class="descritor">Término:</span> <%=lista_projetos[i].fim %>            
+        </li> 
+    <% } %>
+    </ul>
+</body>
+<%# A linha abaixo carrega no template o conteúdo total do arquivo footer.ejs %>
+<%- include('base_footer') -%>
