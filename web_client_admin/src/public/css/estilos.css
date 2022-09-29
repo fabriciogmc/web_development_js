@@ -28,3 +28,22 @@ li{
     font-weight: bold;
 }
 
+form{
+    display: block;
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+nav{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+

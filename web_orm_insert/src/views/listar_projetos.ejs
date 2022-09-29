@@ -3,12 +3,12 @@
     <ul>
     <% for(var i=0; i< lista_projetos.length; ++i) { %>        
         <li> 
+            <span class="descritor">Tipo de Título do Projeto:</span> <%=lista_projetos[i].titulo %><br/>
             <span class="descritor">Tipo de Projeto:</span> <%=lista_projetos[i].tipo %><br/>
-            <% if(lista_projetos[i].tipo =="software") { %>
             <span class="descritor">Tecnologia:</span> <%=lista_projetos[i].tecnologia %><br/>
-            <% } %>
             <span class="descritor">Início:</span> <%=lista_projetos[i].inicio %> <br/>
-            <span class="descritor">Término:</span> <%=lista_projetos[i].fim %>            
+            <span class="descritor">Término:</span> <%=lista_projetos[i].fim %> <br/>  
+            <span class="descritor">Id:</span> <%=lista_projetos[i].id %> <br/>           
         </li> 
     <% } %>
     </ul>

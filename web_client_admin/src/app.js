@@ -9,14 +9,12 @@ const express = require('express')
 /* importando componente para ler corpo de requisições do tipo body */
 
 const bodyParser = require('body-parser');
-/* build post request data format: */ 
-const FormData = require('form-data');
+
 const app = express();
 const port = 5003;
 
 /* importando o módulo para gerar as requisições: request e urllib */
 var request = require('request');
-const axios = require('axios');
 /* importando o modelo */
 const modelo = require('./models/models');
 var Projeto = modelo.Projeto; //Vinculação de tipo
@@ -31,7 +29,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 
 /* Configurando o diretório que serve arquivos estáticos.*/
-app.use(express.static('public'));
+app.use(express.static('src/public'));
 
 app.get('/', listProjectHandler);
 

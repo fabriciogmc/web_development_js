@@ -1,6 +1,7 @@
 
 class Projeto {
-    constructor(titulo, tipo, tecnologia, inicio, fim){
+    constructor(id, titulo, tipo, tecnologia, inicio, fim){
+        this.id= id;
         this.titulo = titulo;
         this.tipo = tipo;
         this.tecnologia = tecnologia;

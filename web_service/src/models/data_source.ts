@@ -1,6 +1,6 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
-import { Projeto} from "./models/Projeto"
+import { Projeto} from "./model"
 
 export const MariaDBDataSource = new DataSource({
     type: "mysql",

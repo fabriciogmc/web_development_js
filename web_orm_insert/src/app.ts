@@ -29,7 +29,7 @@ service.start();
 
 
 /* Configurando o diretório que serve arquivos estáticos.*/
-app.use(express.static('public'));
+app.use(express.static('src/public'));
 
 app.get('/', listProjectHandler);
 

@@ -24,7 +24,7 @@ app.set('views', './src/views'); //Referência a partir do ponto de execução, 
 
 
 /* Configurando o diretório que serve arquivos estáticos.*/
-app.use(express.static('public'));
+app.use(express.static('src/public'));
 
 app.get('/', listProjectHandler);
 
@@ -42,8 +42,8 @@ function listProjectHandler(req, resp){
                 } else {
                     /* build project list: */
                     res.body.forEach((item)=>{
-                        let projeto = new Projeto(item.id, item.tipo, item.tecnologia,
-                                                 item.inicio, item.fim);
+                        let projeto = new Projeto(item.id, item.titulo, item.tipo, 
+                                            item.tecnologia, item.inicio, item.fim);
                         projetos.push(projeto);
                     }); 
                     resp.render('listar_projetos',{lista_projetos: projetos});                    
