@@ -4,21 +4,25 @@ import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
 export class Projeto {
 
     @PrimaryGeneratedColumn()
-    id: number
+    id: number;
 
     @Column()
-    titulo: string
+    titulo: string;
 
     @Column()
     tipo: string
 
     @Column()
-    tecnologia: string
+    tecnologia: string;
 
     @Column()
-    inicio: string
+    inicio: string;
 
     @Column()
-    fim: string
+    fim: string;
 
 }
+
+
+
+

@@ -1,6 +1,6 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
-import { Projeto} from "./models/Projeto"
+import { Projeto} from "./model"
 
 export const MariaDBDataSource = new DataSource({
     type: "mysql",
@@ -16,6 +16,10 @@ export const MariaDBDataSource = new DataSource({
     subscribers: [],
 })
 
-
-
-
+export function dataSourceStart(){
+    MariaDBDataSource.initialize().then( ()=>{
+        console.log("Inicializada a fonte de dados...");
+    }).catch((err)=>{
+        console.error("Erro de inicialização da fonte de dados");
+    }) 
+}
