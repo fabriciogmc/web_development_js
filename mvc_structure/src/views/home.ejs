@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/script.js"></script> 
+    <title>Exemplo de utilização de templates com um modelo mockado (stubs).</title>
+</head>
+<body>
+    <div class="div-vazia-centralizada">
+        <p>Sistema desenvolvido por: <%= usuario.nome %></p>
+        <p>Meus telefones para contato são: </p>
+        <ul>
+            <% usuario.telefones.forEach(function(item) { %> 
+                <li class="ul-sem-marcador"> (<%= item.ddd %>) <%=item.numero %> </li>
+            <% }); %>
+        </ul>
+    </div>        
+</body>
+</html>

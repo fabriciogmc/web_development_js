@@ -1,0 +1,12 @@
+/* Exemplo de CSS servido estaticamente pelo Express.
+Autor: Fabrício G. M. de Carvalho
+*/
+.div-vazia-centralizada{
+    display:block;
+    margin:auto;
+    text-align:center;
+}
+
+.ul-sem-marcador{
+    list-style: none;
+}
