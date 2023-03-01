@@ -4,6 +4,8 @@
 
 Listagem de exemplos:
 
+* console_orm_insert: Exemplo que ilustra a necessidade de espera pela inicialização do DataSource.
+
 * executando_codigo_js: exemplos de execução de código JS tanto no front end como no back end.
 
 * mvc_structure: Exemplo de projeto com arquitetura MVC e objetos mockados (stubs).
